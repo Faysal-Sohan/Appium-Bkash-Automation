@@ -50,6 +50,6 @@ class BkashAppAutomation:
 if __name__ == "__main__":
     bkash_test = BkashAppAutomation()
     bkash_test.start_app()
-    bkash_test.enter_app("99805")
+    bkash_test.enter_app("")
     bkash_test.check_balance()
     bkash_test.close_app()

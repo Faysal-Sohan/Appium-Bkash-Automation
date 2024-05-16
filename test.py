@@ -25,7 +25,7 @@ class TestAppium(unittest.TestCase):
         if self.driver:
             self.driver.quit()
     
-    def test_enter_app(self, pin = "99805"):
+    def test_enter_app(self, pin = ""):
         # Typing pin and proceed
         for digit in pin:
             key_element = self.driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value=digit)
